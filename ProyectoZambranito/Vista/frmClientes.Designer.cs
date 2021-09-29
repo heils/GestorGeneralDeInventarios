@@ -28,11 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnClientes = new System.Windows.Forms.Button();
             this.txtNombreCliente = new System.Windows.Forms.TextBox();
             this.dtgClientes = new System.Windows.Forms.DataGridView();
+            this.btnClientes = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgClientes)).BeginInit();
             this.SuspendLayout();
+            // 
+            // txtNombreCliente
+            // 
+            this.txtNombreCliente.Location = new System.Drawing.Point(480, 80);
+            this.txtNombreCliente.Name = "txtNombreCliente";
+            this.txtNombreCliente.Size = new System.Drawing.Size(158, 20);
+            this.txtNombreCliente.TabIndex = 14;
+            // 
+            // dtgClientes
+            // 
+            this.dtgClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgClientes.Location = new System.Drawing.Point(204, 139);
+            this.dtgClientes.Name = "dtgClientes";
+            this.dtgClientes.Size = new System.Drawing.Size(488, 252);
+            this.dtgClientes.TabIndex = 15;
             // 
             // btnClientes
             // 
@@ -40,28 +56,23 @@
             this.btnClientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClientes.FlatAppearance.BorderSize = 2;
             this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClientes.Image = global::ProyectoZambranito.Properties.Resources.Webp_net_resizeimage__8_;
-            this.btnClientes.Location = new System.Drawing.Point(92, 198);
+            this.btnClientes.Location = new System.Drawing.Point(388, 417);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(171, 137);
+            this.btnClientes.Size = new System.Drawing.Size(145, 44);
             this.btnClientes.TabIndex = 13;
+            this.btnClientes.Text = "Buscar";
             this.btnClientes.UseVisualStyleBackColor = false;
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
-            // txtNombreCliente
+            // label1
             // 
-            this.txtNombreCliente.Location = new System.Drawing.Point(373, 111);
-            this.txtNombreCliente.Name = "txtNombreCliente";
-            this.txtNombreCliente.Size = new System.Drawing.Size(236, 20);
-            this.txtNombreCliente.TabIndex = 14;
-            // 
-            // dtgClientes
-            // 
-            this.dtgClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgClientes.Location = new System.Drawing.Point(282, 185);
-            this.dtgClientes.Name = "dtgClientes";
-            this.dtgClientes.Size = new System.Drawing.Size(571, 252);
-            this.dtgClientes.TabIndex = 15;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(275, 80);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(153, 13);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Digite un id para buscar cliente";
             // 
             // frmClientes
             // 
@@ -69,6 +80,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(62)))), ((int)(((byte)(112)))));
             this.ClientSize = new System.Drawing.Size(903, 583);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dtgClientes);
             this.Controls.Add(this.txtNombreCliente);
             this.Controls.Add(this.btnClientes);
@@ -85,5 +97,6 @@
         private System.Windows.Forms.Button btnClientes;
         private System.Windows.Forms.TextBox txtNombreCliente;
         private System.Windows.Forms.DataGridView dtgClientes;
+        private System.Windows.Forms.Label label1;
     }
 }
