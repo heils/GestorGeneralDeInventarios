@@ -33,7 +33,6 @@ namespace bDatos
             orCommand.Parameters.AddWithValue(":prmUser", prmUser);
             orCommand.Parameters.AddWithValue(":prmPass", prmPass);
             OracleDataReader varReader = orCommand.ExecuteReader();
-            varReader.GetValue(0);
 
 
             if (varReader.HasRows)
