@@ -76,9 +76,9 @@ namespace ProyectoZambranito.Vista
             // ptbImagenUsuario
             // 
             this.ptbImagenUsuario.Image = global::ProyectoZambranito.Properties.Resources._90;
-            this.ptbImagenUsuario.Location = new System.Drawing.Point(3, 31);
+            this.ptbImagenUsuario.Location = new System.Drawing.Point(12, 31);
             this.ptbImagenUsuario.Name = "ptbImagenUsuario";
-            this.ptbImagenUsuario.Size = new System.Drawing.Size(86, 96);
+            this.ptbImagenUsuario.Size = new System.Drawing.Size(99, 111);
             this.ptbImagenUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbImagenUsuario.TabIndex = 3;
             this.ptbImagenUsuario.TabStop = false;
