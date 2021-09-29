@@ -37,7 +37,7 @@
             // 
             // txtNombreCliente
             // 
-            this.txtNombreCliente.Location = new System.Drawing.Point(480, 80);
+            this.txtNombreCliente.Location = new System.Drawing.Point(284, 119);
             this.txtNombreCliente.Name = "txtNombreCliente";
             this.txtNombreCliente.Size = new System.Drawing.Size(158, 20);
             this.txtNombreCliente.TabIndex = 14;
@@ -45,9 +45,9 @@
             // dtgClientes
             // 
             this.dtgClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgClientes.Location = new System.Drawing.Point(204, 139);
+            this.dtgClientes.Location = new System.Drawing.Point(66, 172);
             this.dtgClientes.Name = "dtgClientes";
-            this.dtgClientes.Size = new System.Drawing.Size(488, 252);
+            this.dtgClientes.Size = new System.Drawing.Size(757, 360);
             this.dtgClientes.TabIndex = 15;
             // 
             // btnClientes
@@ -56,7 +56,7 @@
             this.btnClientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClientes.FlatAppearance.BorderSize = 2;
             this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClientes.Location = new System.Drawing.Point(388, 417);
+            this.btnClientes.Location = new System.Drawing.Point(482, 106);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(145, 44);
             this.btnClientes.TabIndex = 13;
@@ -67,8 +67,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(275, 80);
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(62)))), ((int)(((byte)(112)))));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(125, 122);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(153, 13);
             this.label1.TabIndex = 16;
