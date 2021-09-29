@@ -72,6 +72,12 @@
     </Compile>
     <Compile Include="Modelo\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vista\frmMenuUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\frmMenuUser.Designer.cs">
+      <DependentUpon>frmMenuUser.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Vista\frmClientes.resx">
       <DependentUpon>frmClientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +96,9 @@
     </Compile>
     <EmbeddedResource Include="Vista\frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\frmMenuUser.resx">
+      <DependentUpon>frmMenuUser.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -141,7 +150,20 @@
     <None Include="Resources\Webp.net-resizeimage %289%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Menu User.png" />
+    <None Include="Resources\Sin título-4.png" />
+    <None Include="Resources\Sin título-3.png" />
+    <None Include="Resources\90.png" />
+    <None Include="Resources\acerca de.png" />
+    <None Include="Resources\boton.png" />
+    <None Include="Resources\botonAyuda.png" />
+    <None Include="Resources\botonAyuda2.png" />
+    <None Include="Resources\caja.png" />
+    <None Include="Resources\cerrarseseion.png" />
+    <None Include="Resources\clientes.png" />
+    <None Include="Resources\clientes2.png" />
     <Content Include="Resources\help.png" />
+    <None Include="Resources\menuuser.bmp" />
     <None Include="Resources\Webp.net-resizeimage1.png" />
     <None Include="Resources\Webp.net-resizeimage %2810%29.png" />
     <None Include="Resources\help1.png" />
