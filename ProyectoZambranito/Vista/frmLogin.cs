@@ -62,7 +62,7 @@ namespace ProyectoZambranito.Vista
         private void btnLogin_Click(object sender, EventArgs e)
         {
             accUser loginUser = new accUser();
-            if (loginUser.Login(txtUser.Text, txtPass.Text) == true)
+            if (loginUser.Login(txtUser.Text, txtPass.Text) == 1)
             {
                 frmMenuPrincipal MainMenu = new frmMenuPrincipal();
                 MainMenu.Show();
@@ -70,9 +70,18 @@ namespace ProyectoZambranito.Vista
             }
             else
             {
-                MessageBox.Show("USUARIO/CONTRASEÑA INCORRECTO");
-                txtPass.Clear();
-                txtPass.Focus();
+                if (loginUser.Login(txtUser.Text, txtPass.Text) == 2)
+                {
+                    frmMenuUser MainUser = new frmMenuUser();
+                    MainUser.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("USUARIO/CONTRASEÑA INCORRECTO");
+                    txtPass.Clear();
+                    txtPass.Focus();
+                }
             }
         }
     }

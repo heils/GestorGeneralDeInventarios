@@ -10,7 +10,7 @@ namespace bDatos
 {
     public class accUser : conexionsql
     {
-        public Boolean Login( string prmUser, string prmPass)
+        public int Login( string prmUser, string prmPass)
         {
             
              OracleConnection conxSQL = getConexion();
@@ -24,24 +24,32 @@ namespace bDatos
                 MessageBox.Show(ex.ToString());
             }
 
-     
-            OracleCommand orCommand = new OracleCommand(); 
+
+            OracleCommand orCommand = new OracleCommand();
             orCommand.Connection = conxSQL;
-            orCommand.CommandText = "SELECT * FROM USUARIO WHERE NICK = :prmUser AND CONTRASENIA = :prmPass ";
-            Console.WriteLine(prmUser);
-            Console.WriteLine(prmPass);
             orCommand.Parameters.AddWithValue(":prmUser", prmUser);
             orCommand.Parameters.AddWithValue(":prmPass", prmPass);
+            orCommand.CommandText = "SELECT * FROM USUARIO WHERE NICK = :prmUser AND CONTRASENIA = :prmPass AND ROL = 'admin'";
             OracleDataReader varReader = orCommand.ExecuteReader();
 
-
             if (varReader.HasRows)
+
             {
-                return true;
+                return 1;
             }
             else
             {
-                return false;
+                orCommand.CommandText = "SELECT * FROM USUARIO WHERE NICK = :prmUser AND CONTRASENIA = :prmPass AND ROL = 'user'";
+                varReader = orCommand.ExecuteReader();
+
+                if (varReader.HasRows)
+                {
+                    return 2;
+                }
+                else
+                {
+                    return 3;
+                }
             }
 
 
