@@ -50,16 +50,16 @@ namespace ProyectoZambranito.Vista
             this.btnInventario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnInventario.Location = new System.Drawing.Point(174, 31);
             this.btnInventario.Name = "btnInventario";
-            this.btnInventario.Size = new System.Drawing.Size(144, 150);
+            this.btnInventario.Size = new System.Drawing.Size(155, 150);
             this.btnInventario.TabIndex = 0;
             this.btnInventario.UseVisualStyleBackColor = true;
             // 
             // btnCliente
             // 
             this.btnCliente.BackgroundImage = global::ProyectoZambranito.Properties.Resources.clientes2;
-            this.btnCliente.Location = new System.Drawing.Point(174, 203);
+            this.btnCliente.Location = new System.Drawing.Point(174, 215);
             this.btnCliente.Name = "btnCliente";
-            this.btnCliente.Size = new System.Drawing.Size(144, 150);
+            this.btnCliente.Size = new System.Drawing.Size(155, 150);
             this.btnCliente.TabIndex = 1;
             this.btnCliente.UseVisualStyleBackColor = true;
             // 
@@ -68,7 +68,7 @@ namespace ProyectoZambranito.Vista
             this.btnCaja.BackgroundImage = global::ProyectoZambranito.Properties.Resources.caja;
             this.btnCaja.Location = new System.Drawing.Point(174, 413);
             this.btnCaja.Name = "btnCaja";
-            this.btnCaja.Size = new System.Drawing.Size(144, 154);
+            this.btnCaja.Size = new System.Drawing.Size(155, 154);
             this.btnCaja.TabIndex = 2;
             this.btnCaja.UseVisualStyleBackColor = true;
             this.btnCaja.Click += new System.EventHandler(this.button3_Click);
@@ -142,9 +142,9 @@ namespace ProyectoZambranito.Vista
             // btnAyuda
             // 
             this.btnAyuda.BackgroundImage = global::ProyectoZambranito.Properties.Resources.botonAyuda2;
-            this.btnAyuda.Location = new System.Drawing.Point(494, 478);
+            this.btnAyuda.Location = new System.Drawing.Point(494, 473);
             this.btnAyuda.Name = "btnAyuda";
-            this.btnAyuda.Size = new System.Drawing.Size(162, 24);
+            this.btnAyuda.Size = new System.Drawing.Size(162, 29);
             this.btnAyuda.TabIndex = 9;
             this.btnAyuda.UseVisualStyleBackColor = true;
             // 
