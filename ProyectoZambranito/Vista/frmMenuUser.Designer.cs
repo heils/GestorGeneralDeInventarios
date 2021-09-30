@@ -185,6 +185,7 @@ namespace ProyectoZambranito.Vista
             this.Controls.Add(this.btnCliente);
             this.Controls.Add(this.btnInventario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "frmMenuUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMenuUser";
