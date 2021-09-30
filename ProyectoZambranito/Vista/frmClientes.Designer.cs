@@ -34,6 +34,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.btnRegresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +55,8 @@
             this.dtgClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgClientes.Location = new System.Drawing.Point(48, 175);
             this.dtgClientes.Name = "dtgClientes";
-            this.dtgClientes.Size = new System.Drawing.Size(1364, 519);
+            this.dtgClientes.RowHeadersWidth = 51;
+            this.dtgClientes.Size = new System.Drawing.Size(1364, 445);
             this.dtgClientes.TabIndex = 15;
             // 
             // btnClientes
@@ -103,11 +106,23 @@
             this.lineShape1.Y1 = 132;
             this.lineShape1.Y2 = 132;
             // 
+            // btnRegresar
+            // 
+            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.Location = new System.Drawing.Point(12, 671);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(120, 52);
+            this.btnRegresar.TabIndex = 18;
+            this.btnRegresar.Text = "regresar";
+            this.btnRegresar.UseVisualStyleBackColor = true;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            // 
             // frmClientes
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(62)))), ((int)(((byte)(112)))));
             this.ClientSize = new System.Drawing.Size(1472, 742);
+            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtgClientes);
             this.Controls.Add(this.txtNombreCliente);
@@ -131,5 +146,7 @@
         private System.Windows.Forms.Label label1;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
+        private System.Windows.Forms.HelpProvider helpProvider1;
+        private System.Windows.Forms.Button btnRegresar;
     }
 }

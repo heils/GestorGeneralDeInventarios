@@ -31,7 +31,7 @@ namespace ProyectoZambranito.Vista
 
         public void buscarCliente()
         {
-
+            
             try
             {
                 ora.Open();
@@ -80,6 +80,17 @@ namespace ProyectoZambranito.Vista
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            volver();
+        }
+        public void volver()
+        {
+           // Vista.frmMenuPrincipal frmMenuPrincipal = new Vista.frmMenuPrincipal();
+            //frmMenuPrincipal.Show();
+            this.Hide();
         }
     }
 }

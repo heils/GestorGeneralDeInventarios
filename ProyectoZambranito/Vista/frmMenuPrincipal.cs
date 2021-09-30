@@ -39,5 +39,30 @@ namespace ProyectoZambranito.Vista
             this.Hide();
             frmLogin.Show();
         }
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            Usuarios();
+        }
+        public void Usuarios()
+        {
+            Vista.frmUsuarios frmUsuarios = new Vista.frmUsuarios();
+            frmUsuarios.Show();
+            this.Close();
+            
+        }
+
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            cerrarSesion();
+        }
+        public void cerrarSesion()
+        {
+            Vista.frmLogin Login = new Vista.frmLogin();
+            Login.Show();
+            this.Hide();
+        }
+        
+        
     }
 }

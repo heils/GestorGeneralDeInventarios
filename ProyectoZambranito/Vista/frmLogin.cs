@@ -72,8 +72,8 @@ namespace ProyectoZambranito.Vista
             {
                 if (loginUser.Login(txtUser.Text, txtPass.Text) == 2)
                 {
-                    frmMenuUser MainUser = new frmMenuUser();
-                    MainUser.Show();
+                    frmMenuUser frmMenuUser = new frmMenuUser();
+                    frmMenuUser.Show();
                     this.Hide();
                 }
                 else

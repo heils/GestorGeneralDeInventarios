@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.OracleClient;
 using System.Windows.Forms;
+using System.Data;
 
 namespace bDatos
 {
@@ -27,20 +28,26 @@ namespace bDatos
 
 
             OracleCommand orCommand = new OracleCommand();
+            
             orCommand.Connection = conxSQL;
             orCommand.Parameters.AddWithValue(":prmUser", prmUser);
             orCommand.Parameters.AddWithValue(":prmPass", prmPass);
-            orCommand.CommandText = "SELECT * FROM USUARIO WHERE NICK = :prmUser AND CONTRASENIA = :prmPass AND ROL = 'admin'";
-            OracleDataReader varReader = orCommand.ExecuteReader();
+            orCommand.CommandText = "SELECT * FROM USUARIO WHERE( NICK = :prmUser AND CONTRASENIA = :prmPass AND ROL = 'admin')";
 
+            
+            OracleDataReader varReader = orCommand.ExecuteReader();
+            Console.WriteLine("hola2");
             if (varReader.HasRows)
 
             {
+                Console.WriteLine("hoal");
                 return 1;
             }
             else
             {
-                orCommand.CommandText = "SELECT * FROM USUARIO WHERE NICK = :prmUser AND CONTRASENIA = :prmPass AND ROL = 'user'";
+                Console.WriteLine("hollll");
+                orCommand.CommandText = ("SELECT * " +
+                                         "FROM USUARIO WHERE NICK = :prmUser AND CONTRASENIA = :prmPass AND ROL = 'user'");
                 varReader = orCommand.ExecuteReader();
 
                 if (varReader.HasRows)

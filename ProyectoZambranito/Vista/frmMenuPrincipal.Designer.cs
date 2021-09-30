@@ -82,6 +82,7 @@ namespace ProyectoZambranito.Vista
             this.btnCerrarSesion.Size = new System.Drawing.Size(171, 31);
             this.btnCerrarSesion.TabIndex = 10;
             this.btnCerrarSesion.UseVisualStyleBackColor = false;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // label1
             // 
@@ -252,6 +253,7 @@ namespace ProyectoZambranito.Vista
             this.btnUsuarios.Size = new System.Drawing.Size(171, 137);
             this.btnUsuarios.TabIndex = 18;
             this.btnUsuarios.UseVisualStyleBackColor = false;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // btnReportes
             // 
