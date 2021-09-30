@@ -26,5 +26,10 @@ namespace ProyectoZambranito.Vista
         {
 
         }
+
+        private void frmMenuUser_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -172,7 +172,6 @@ namespace ProyectoZambranito.Vista
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProyectoZambranito.Properties.Resources.Sin_título_4;
             this.ClientSize = new System.Drawing.Size(668, 617);
-            this.ControlBox = false;
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.btnAcercaDe);
             this.Controls.Add(this.btnAyuda);
@@ -185,8 +184,11 @@ namespace ProyectoZambranito.Vista
             this.Controls.Add(this.btnCaja);
             this.Controls.Add(this.btnCliente);
             this.Controls.Add(this.btnInventario);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "frmMenuUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMenuUser";
+            this.Load += new System.EventHandler(this.frmMenuUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ptbImagenUsuario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

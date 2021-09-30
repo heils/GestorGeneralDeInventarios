@@ -14,6 +14,7 @@ namespace bDatos
         {
             
              OracleConnection conxSQL = getConexion();
+           
             try
             {
                 conxSQL.Open();
