@@ -32,5 +32,12 @@ namespace ProyectoZambranito.Vista
             frmClientes.Show();
 
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+            Vista.frmLogin frmLogin = new Vista.frmLogin();
+            this.Hide();
+            frmLogin.Show();
+        }
     }
 }

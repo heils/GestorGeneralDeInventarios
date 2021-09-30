@@ -165,6 +165,7 @@ namespace ProyectoZambranito.Vista
             this.btnCerrarSesion.Size = new System.Drawing.Size(162, 24);
             this.btnCerrarSesion.TabIndex = 11;
             this.btnCerrarSesion.UseVisualStyleBackColor = true;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // frmMenuUser
             // 

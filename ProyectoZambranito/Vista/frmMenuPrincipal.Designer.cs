@@ -192,6 +192,7 @@ namespace ProyectoZambranito.Vista
             this.label11.Size = new System.Drawing.Size(68, 13);
             this.label11.TabIndex = 28;
             this.label11.Text = "Cerrar sesión";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // btnAyuda
             // 
