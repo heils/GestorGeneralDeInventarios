@@ -183,6 +183,26 @@ namespace ProyectoZambranito.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap REGRESAR {
+            get {
+                object obj = ResourceManager.GetObject("REGRESAR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap REGRESAR_TAMAÑOREAL {
+            get {
+                object obj = ResourceManager.GetObject("REGRESAR_TAMAÑOREAL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Sin_título_3 {
             get {
                 object obj = ResourceManager.GetObject("Sin_título_3", resourceCulture);

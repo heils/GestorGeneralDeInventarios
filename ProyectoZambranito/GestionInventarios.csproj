@@ -184,6 +184,8 @@
     <None Include="Resources\Webp.net-resizeimage %289%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\REGRESAR_TAMAÑOREAL.png" />
+    <None Include="Resources\REGRESAR.png" />
     <None Include="Resources\Menu User.png" />
     <None Include="Resources\Sin título-4.png" />
     <None Include="Resources\Sin título-3.png" />

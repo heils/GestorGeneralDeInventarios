@@ -55,7 +55,7 @@ namespace ProyectoZambranito.Vista
         }
         public void crearUsuario()
         {
-            if (string.IsNullOrEmpty(txtNick.Text))
+            if (string.IsNullOrEmpty(txtNick.Text)|| string.IsNullOrEmpty(txtContrasenia.Text) || string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(cbxRol.Text))
             {
 
                 MessageBox.Show("ningun campo puede estar vacio");
@@ -74,7 +74,7 @@ namespace ProyectoZambranito.Vista
                     comando.Parameters.Add("prm_nick", OracleType.VarChar).Value = this.txtNick.Text;
                     comando.Parameters.Add("prm_nombre", OracleType.VarChar).Value = this.txtNombre.Text;
                     comando.Parameters.Add("prm_contrasenia", OracleType.VarChar).Value = this.txtContrasenia.Text;
-                    comando.Parameters.Add("prm_rol", OracleType.VarChar).Value = this.txtRol.Text;
+                    comando.Parameters.Add("prm_rol", OracleType.VarChar).Value = this.cbxRol.SelectedItem.ToString();
                     OracleDataAdapter adaptador = new OracleDataAdapter();
                     adaptador.SelectCommand = comando;
                     comando.ExecuteReader();
@@ -84,8 +84,8 @@ namespace ProyectoZambranito.Vista
                     txtNick.Clear();
                     txtNombre.Clear();
                     txtContrasenia.Clear();
-                    txtRol.Clear();
-
+                    cbxRol.Text = null;
+                            
                 }
                 catch (Exception ex)
                 {
