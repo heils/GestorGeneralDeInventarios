@@ -100,6 +100,12 @@
     <Compile Include="Vista\frmMenuUser.Designer.cs">
       <DependentUpon>frmMenuUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\frmProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\frmProveedores.Designer.cs">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\frmUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\frmMenuUser.resx">
       <DependentUpon>frmMenuUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\frmProveedores.resx">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\frmUsuarios.resx">
       <DependentUpon>frmUsuarios.cs</DependentUpon>

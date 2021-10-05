@@ -62,7 +62,15 @@ namespace ProyectoZambranito.Vista
             Login.Show();
             this.Hide();
         }
-        
-        
+
+        private void btnProveedores_Click(object sender, EventArgs e)
+        {
+            proveedores();
+        }
+        public void proveedores()
+        {
+            Vista.frmProveedores frmProveedores = new Vista.frmProveedores();
+            frmProveedores.Show();
+        }
     }
 }
