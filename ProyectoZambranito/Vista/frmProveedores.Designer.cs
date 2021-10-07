@@ -141,6 +141,8 @@ namespace ProyectoZambranito.Vista
             // 
             // dtgProveedores
             // 
+            this.dtgProveedores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgProveedores.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dtgProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgProveedores.Location = new System.Drawing.Point(6, 74);
             this.dtgProveedores.Name = "dtgProveedores";
