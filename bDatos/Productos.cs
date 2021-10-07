@@ -17,6 +17,7 @@ namespace bDatos
 
         public DataTable mostrarProductos()
         {
+            //Mostrar
             varCommand.Connection = varConexion.openBD();
             varCommand.CommandText = "mostraProductos";
             varCommand.CommandType = CommandType.StoredProcedure;
