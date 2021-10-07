@@ -27,5 +27,32 @@ namespace bDatos
             varConexion.closeBD();
             return varTabla;
         }
+        public void insertarProductos(int prmId, string prmNombre, double prmPeso, DateTime prmFDV, double prmPrecio, int prmStock)
+        {
+            varCommand.Connection = varConexion.openBD();
+            varCommand.CommandText = "insertarProductos";
+            varCommand.CommandType = CommandType.StoredProcedure;
+            varCommand.Parameters.Add("prmID", OracleType.Number).Value =prmId;
+            varCommand.Parameters.Add("prmNombre", OracleType.VarChar).Value = prmNombre;
+            varCommand.Parameters.Add("prmPeso", OracleType.Number).Value = prmPeso;
+            varCommand.Parameters.Add("prmFDV", OracleType.DateTime).Value = prmFDV;
+            varCommand.Parameters.Add("prmPrecio", OracleType.Number).Value = prmPrecio;
+            varCommand.Parameters.Add("prmStock", OracleType.Number).Value = prmStock;
+            varCommand.ExecuteNonQuery();
+
+        }
+        public void ModificarProductos(int prmId, string prmNombre, double prmPeso, double prmPrecio, int prmStock)
+        {
+            varCommand.Connection = varConexion.openBD();
+            varCommand.CommandText = "modificarProductos";
+            varCommand.CommandType = CommandType.StoredProcedure;
+            varCommand.Parameters.Add("prmID", OracleType.Number).Value = prmId;
+            varCommand.Parameters.Add("prmNombre", OracleType.VarChar).Value = prmNombre;
+            varCommand.Parameters.Add("prmPeso", OracleType.Number).Value = prmPeso;
+            varCommand.Parameters.Add("prmPrecio", OracleType.Number).Value = prmPrecio;
+            varCommand.Parameters.Add("prmStock", OracleType.Number).Value = prmStock;
+            varCommand.ExecuteNonQuery();
+
+        }
     }
 }

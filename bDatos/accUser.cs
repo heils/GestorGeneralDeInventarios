@@ -27,7 +27,7 @@ namespace bDatos
             if (varReader.HasRows)
 
             {
-                Console.WriteLine("hoal");
+                
                 return 1;
             }
             else

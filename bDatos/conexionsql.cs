@@ -19,7 +19,7 @@ namespace bDatos
         {
             try
             {
-                Console.WriteLine("Entro");
+                
                 varConexion.Open();
                 return varConexion;
             }
