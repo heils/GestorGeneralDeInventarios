@@ -9,34 +9,21 @@ using System.Data;
 
 namespace bDatos
 {
-    public class accUser : conexionsql
+    public class accUser : Conexionsql
     {
         public int Login( string prmUser, string prmPass)
         {
             
-             OracleConnection conxSQL = getConexion();
-           
-            try
-            {
-                conxSQL.Open();
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.ToString());
-            }
-
-
+             Conexionsql conxSQL = new Conexionsql();
             OracleCommand orCommand = new OracleCommand();
             
-            orCommand.Connection = conxSQL;
+            orCommand.Connection = conxSQL.openBD();
             orCommand.Parameters.AddWithValue(":prmUser", prmUser);
             orCommand.Parameters.AddWithValue(":prmPass", prmPass);
             orCommand.CommandText = "SELECT * FROM USUARIO WHERE( NICK = :prmUser AND CONTRASENIA = :prmPass AND ROL = 'admin')";
 
             
             OracleDataReader varReader = orCommand.ExecuteReader();
-            Console.WriteLine("hola2");
             if (varReader.HasRows)
 
             {
@@ -45,7 +32,6 @@ namespace bDatos
             }
             else
             {
-                Console.WriteLine("hollll");
                 orCommand.CommandText = ("SELECT * " +
                                          "FROM USUARIO WHERE NICK = :prmUser AND CONTRASENIA = :prmPass AND ROL = 'user'");
                 varReader = orCommand.ExecuteReader();
@@ -59,8 +45,7 @@ namespace bDatos
                     return 3;
                 }
             }
-
-
+            conxSQL.closeBD();
         }
     }
 }

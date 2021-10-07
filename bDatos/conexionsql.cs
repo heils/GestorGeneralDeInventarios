@@ -1,20 +1,47 @@
 ﻿using System;
 using System.Data.OracleClient;
+using System.Windows.Forms;
 namespace bDatos
 {
-    public abstract class conexionsql
+    public class Conexionsql
     {
-        private  string conexionstringsql = "DATA SOURCE = xe; PASSWORD = a; USER ID = clientesbd;";
-        protected conexionsql()
+        OracleConnection varConexion;
+        public Conexionsql()
+        {
+            varConexion = new OracleConnection(@"Data Source = xe ;USER ID=clientesbd; Password=a;");
+        }
+        public OracleConnection rBD()
         {
 
+            return varConexion;
         }
-
-        protected OracleConnection getConexion()
+        public OracleConnection openBD()
         {
-            OracleConnection conOracle = new OracleConnection(conexionstringsql);
+            try
+            {
+                Console.WriteLine("Entro");
+                varConexion.Open();
+                return varConexion;
+            }
+            catch (Exception ex)
+            {
 
-            return conOracle;
+                return null;
+            } 
         }
+        public bool closeBD()
+        {
+            try
+            {
+                varConexion.Close();
+                return true;
+            }
+            catch (Exception ex)
+            {
+
+                return false;
+            }
+        }
+
     }
 }

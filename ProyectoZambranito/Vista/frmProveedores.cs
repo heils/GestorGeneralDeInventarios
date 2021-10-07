@@ -168,5 +168,10 @@ namespace ProyectoZambranito.Vista
         {
             agregarProveedor();
         }
+
+        private void frmProveedores_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
