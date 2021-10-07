@@ -38,12 +38,13 @@ namespace ProyectoZambranito.Vista
             this.label1 = new System.Windows.Forms.Label();
             this.dtgProveedores = new System.Windows.Forms.DataGridView();
             this.tbpEliminarProveedor = new System.Windows.Forms.TabPage();
-            this.tbpAgregar = new System.Windows.Forms.TabPage();
-            this.btnEliminarProveedor = new System.Windows.Forms.Button();
             this.gbEliminarProveedor = new System.Windows.Forms.GroupBox();
-            this.txtIdProveedorEliminar = new System.Windows.Forms.TextBox();
             this.lblTextoId = new System.Windows.Forms.Label();
+            this.txtIdProveedorEliminar = new System.Windows.Forms.TextBox();
+            this.btnEliminarProveedor = new System.Windows.Forms.Button();
+            this.tbpAgregar = new System.Windows.Forms.TabPage();
             this.gbAgregarProveedor = new System.Windows.Forms.GroupBox();
+            this.btnAgregarProveedor = new System.Windows.Forms.Button();
             this.txtCorreoProveedor = new System.Windows.Forms.TextBox();
             this.txtTelefonoProveedor = new System.Windows.Forms.TextBox();
             this.txtCedulaProveedor = new System.Windows.Forms.TextBox();
@@ -54,14 +55,13 @@ namespace ProyectoZambranito.Vista
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnAgregarProveedor = new System.Windows.Forms.Button();
             this.tbcProveedores.SuspendLayout();
             this.tbpProveedores.SuspendLayout();
             this.gbMostrarProveedores.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgProveedores)).BeginInit();
             this.tbpEliminarProveedor.SuspendLayout();
-            this.tbpAgregar.SuspendLayout();
             this.gbEliminarProveedor.SuspendLayout();
+            this.tbpAgregar.SuspendLayout();
             this.gbAgregarProveedor.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -141,6 +141,8 @@ namespace ProyectoZambranito.Vista
             // 
             // dtgProveedores
             // 
+            this.dtgProveedores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgProveedores.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dtgProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgProveedores.Location = new System.Drawing.Point(6, 74);
             this.dtgProveedores.Name = "dtgProveedores";
@@ -159,16 +161,32 @@ namespace ProyectoZambranito.Vista
             this.tbpEliminarProveedor.Text = "Eliminara un proveedor";
             this.tbpEliminarProveedor.UseVisualStyleBackColor = true;
             // 
-            // tbpAgregar
+            // gbEliminarProveedor
             // 
-            this.tbpAgregar.Controls.Add(this.gbAgregarProveedor);
-            this.tbpAgregar.Location = new System.Drawing.Point(4, 22);
-            this.tbpAgregar.Name = "tbpAgregar";
-            this.tbpAgregar.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpAgregar.Size = new System.Drawing.Size(768, 420);
-            this.tbpAgregar.TabIndex = 2;
-            this.tbpAgregar.Text = "Agregar un proveedor";
-            this.tbpAgregar.UseVisualStyleBackColor = true;
+            this.gbEliminarProveedor.Controls.Add(this.lblTextoId);
+            this.gbEliminarProveedor.Controls.Add(this.txtIdProveedorEliminar);
+            this.gbEliminarProveedor.Controls.Add(this.btnEliminarProveedor);
+            this.gbEliminarProveedor.Location = new System.Drawing.Point(20, 34);
+            this.gbEliminarProveedor.Name = "gbEliminarProveedor";
+            this.gbEliminarProveedor.Size = new System.Drawing.Size(494, 297);
+            this.gbEliminarProveedor.TabIndex = 1;
+            this.gbEliminarProveedor.TabStop = false;
+            // 
+            // lblTextoId
+            // 
+            this.lblTextoId.AutoSize = true;
+            this.lblTextoId.Location = new System.Drawing.Point(6, 40);
+            this.lblTextoId.Name = "lblTextoId";
+            this.lblTextoId.Size = new System.Drawing.Size(299, 16);
+            this.lblTextoId.TabIndex = 2;
+            this.lblTextoId.Text = "Ingrese el \"ID\" del proveedor que desea eliminar";
+            // 
+            // txtIdProveedorEliminar
+            // 
+            this.txtIdProveedorEliminar.Location = new System.Drawing.Point(320, 40);
+            this.txtIdProveedorEliminar.Name = "txtIdProveedorEliminar";
+            this.txtIdProveedorEliminar.Size = new System.Drawing.Size(147, 22);
+            this.txtIdProveedorEliminar.TabIndex = 1;
             // 
             // btnEliminarProveedor
             // 
@@ -181,32 +199,16 @@ namespace ProyectoZambranito.Vista
             this.btnEliminarProveedor.UseVisualStyleBackColor = true;
             this.btnEliminarProveedor.Click += new System.EventHandler(this.btnEliminarProveedor_Click);
             // 
-            // gbEliminarProveedor
+            // tbpAgregar
             // 
-            this.gbEliminarProveedor.Controls.Add(this.lblTextoId);
-            this.gbEliminarProveedor.Controls.Add(this.txtIdProveedorEliminar);
-            this.gbEliminarProveedor.Controls.Add(this.btnEliminarProveedor);
-            this.gbEliminarProveedor.Location = new System.Drawing.Point(20, 34);
-            this.gbEliminarProveedor.Name = "gbEliminarProveedor";
-            this.gbEliminarProveedor.Size = new System.Drawing.Size(494, 297);
-            this.gbEliminarProveedor.TabIndex = 1;
-            this.gbEliminarProveedor.TabStop = false;
-            // 
-            // txtIdProveedorEliminar
-            // 
-            this.txtIdProveedorEliminar.Location = new System.Drawing.Point(320, 40);
-            this.txtIdProveedorEliminar.Name = "txtIdProveedorEliminar";
-            this.txtIdProveedorEliminar.Size = new System.Drawing.Size(147, 22);
-            this.txtIdProveedorEliminar.TabIndex = 1;
-            // 
-            // lblTextoId
-            // 
-            this.lblTextoId.AutoSize = true;
-            this.lblTextoId.Location = new System.Drawing.Point(6, 40);
-            this.lblTextoId.Name = "lblTextoId";
-            this.lblTextoId.Size = new System.Drawing.Size(299, 16);
-            this.lblTextoId.TabIndex = 2;
-            this.lblTextoId.Text = "Ingrese el \"ID\" del proveedor que desea eliminar";
+            this.tbpAgregar.Controls.Add(this.gbAgregarProveedor);
+            this.tbpAgregar.Location = new System.Drawing.Point(4, 22);
+            this.tbpAgregar.Name = "tbpAgregar";
+            this.tbpAgregar.Padding = new System.Windows.Forms.Padding(3);
+            this.tbpAgregar.Size = new System.Drawing.Size(768, 420);
+            this.tbpAgregar.TabIndex = 2;
+            this.tbpAgregar.Text = "Agregar un proveedor";
+            this.tbpAgregar.UseVisualStyleBackColor = true;
             // 
             // gbAgregarProveedor
             // 
@@ -226,6 +228,18 @@ namespace ProyectoZambranito.Vista
             this.gbAgregarProveedor.Size = new System.Drawing.Size(756, 408);
             this.gbAgregarProveedor.TabIndex = 10;
             this.gbAgregarProveedor.TabStop = false;
+            // 
+            // btnAgregarProveedor
+            // 
+            this.btnAgregarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarProveedor.Location = new System.Drawing.Point(400, 340);
+            this.btnAgregarProveedor.Name = "btnAgregarProveedor";
+            this.btnAgregarProveedor.Size = new System.Drawing.Size(184, 37);
+            this.btnAgregarProveedor.TabIndex = 20;
+            this.btnAgregarProveedor.Text = "Agregar Proveedor";
+            this.btnAgregarProveedor.UseVisualStyleBackColor = true;
+            this.btnAgregarProveedor.Click += new System.EventHandler(this.btnAgregarProveedor_Click);
             // 
             // txtCorreoProveedor
             // 
@@ -312,18 +326,6 @@ namespace ProyectoZambranito.Vista
             this.label2.TabIndex = 10;
             this.label2.Text = "Nombre ";
             // 
-            // btnAgregarProveedor
-            // 
-            this.btnAgregarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarProveedor.Location = new System.Drawing.Point(400, 340);
-            this.btnAgregarProveedor.Name = "btnAgregarProveedor";
-            this.btnAgregarProveedor.Size = new System.Drawing.Size(184, 37);
-            this.btnAgregarProveedor.TabIndex = 20;
-            this.btnAgregarProveedor.Text = "Agregar Proveedor";
-            this.btnAgregarProveedor.UseVisualStyleBackColor = true;
-            this.btnAgregarProveedor.Click += new System.EventHandler(this.btnAgregarProveedor_Click);
-            // 
             // frmProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -339,9 +341,9 @@ namespace ProyectoZambranito.Vista
             this.gbMostrarProveedores.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgProveedores)).EndInit();
             this.tbpEliminarProveedor.ResumeLayout(false);
-            this.tbpAgregar.ResumeLayout(false);
             this.gbEliminarProveedor.ResumeLayout(false);
             this.gbEliminarProveedor.PerformLayout();
+            this.tbpAgregar.ResumeLayout(false);
             this.gbAgregarProveedor.ResumeLayout(false);
             this.gbAgregarProveedor.PerformLayout();
             this.ResumeLayout(false);
