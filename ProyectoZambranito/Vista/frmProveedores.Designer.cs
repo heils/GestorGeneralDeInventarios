@@ -29,6 +29,7 @@ namespace ProyectoZambranito.Vista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProveedores));
             this.tbcProveedores = new System.Windows.Forms.TabControl();
             this.tbpProveedores = new System.Windows.Forms.TabPage();
             this.gbMostrarProveedores = new System.Windows.Forms.GroupBox();
@@ -333,8 +334,9 @@ namespace ProyectoZambranito.Vista
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(62)))), ((int)(((byte)(112)))));
             this.ClientSize = new System.Drawing.Size(800, 473);
             this.Controls.Add(this.tbcProveedores);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmProveedores";
-            this.Text = "frmProveedores";
+            this.Text = "Proovedores";
             this.Load += new System.EventHandler(this.frmProveedores_Load);
             this.tbcProveedores.ResumeLayout(false);
             this.tbpProveedores.ResumeLayout(false);

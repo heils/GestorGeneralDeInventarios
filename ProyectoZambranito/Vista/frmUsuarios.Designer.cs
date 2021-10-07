@@ -29,6 +29,7 @@ namespace ProyectoZambranito.Vista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUsuarios));
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.label1 = new System.Windows.Forms.Label();
             this.dtgUsuarios = new System.Windows.Forms.DataGridView();
@@ -93,9 +94,10 @@ namespace ProyectoZambranito.Vista
             this.Controls.Add(this.btbGestionarUsuarios);
             this.Controls.Add(this.dtgUsuarios);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmUsuarios";
-            this.Text = "frmUsuarios";
+            this.Text = "Usuarios";
             this.Load += new System.EventHandler(this.frmUsuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgUsuarios)).EndInit();
             this.ResumeLayout(false);

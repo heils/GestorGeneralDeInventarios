@@ -29,6 +29,7 @@ namespace ProyectoZambranito.Vista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenuUser));
             this.btnInventario = new System.Windows.Forms.Button();
             this.btnCliente = new System.Windows.Forms.Button();
             this.btnCaja = new System.Windows.Forms.Button();
@@ -187,11 +188,14 @@ namespace ProyectoZambranito.Vista
             this.Controls.Add(this.btnCaja);
             this.Controls.Add(this.btnCliente);
             this.Controls.Add(this.btnInventario);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmMenuUser";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmMenuUser";
+            this.Text = "Menu Principal";
             ((System.ComponentModel.ISupportInitialize)(this.ptbImagenUsuario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

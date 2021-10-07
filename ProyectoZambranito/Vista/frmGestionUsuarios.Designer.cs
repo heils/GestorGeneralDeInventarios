@@ -29,6 +29,7 @@ namespace ProyectoZambranito.Vista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(btnRegresar));
             this.btnEliminarUsuario = new System.Windows.Forms.Button();
             this.btmCrearUsuario = new System.Windows.Forms.Button();
             this.txtIdUsuarioEliminar = new System.Windows.Forms.TextBox();
@@ -42,15 +43,15 @@ namespace ProyectoZambranito.Vista
             this.label5 = new System.Windows.Forms.Label();
             this.tbcGestorUsuarios = new System.Windows.Forms.TabControl();
             this.tbAgregar = new System.Windows.Forms.TabPage();
-            this.tbEliminar = new System.Windows.Forms.TabPage();
             this.gbAgregar = new System.Windows.Forms.GroupBox();
-            this.gbEliminar = new System.Windows.Forms.GroupBox();
             this.cbxRol = new System.Windows.Forms.ComboBox();
+            this.tbEliminar = new System.Windows.Forms.TabPage();
+            this.gbEliminar = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.tbcGestorUsuarios.SuspendLayout();
             this.tbAgregar.SuspendLayout();
-            this.tbEliminar.SuspendLayout();
             this.gbAgregar.SuspendLayout();
+            this.tbEliminar.SuspendLayout();
             this.gbEliminar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -183,17 +184,6 @@ namespace ProyectoZambranito.Vista
             this.tbAgregar.Text = "Agregar Usuario";
             this.tbAgregar.UseVisualStyleBackColor = true;
             // 
-            // tbEliminar
-            // 
-            this.tbEliminar.Controls.Add(this.gbEliminar);
-            this.tbEliminar.Location = new System.Drawing.Point(4, 22);
-            this.tbEliminar.Name = "tbEliminar";
-            this.tbEliminar.Padding = new System.Windows.Forms.Padding(3);
-            this.tbEliminar.Size = new System.Drawing.Size(452, 400);
-            this.tbEliminar.TabIndex = 1;
-            this.tbEliminar.Text = "Eliminar Usuario";
-            this.tbEliminar.UseVisualStyleBackColor = true;
-            // 
             // gbAgregar
             // 
             this.gbAgregar.Controls.Add(this.cbxRol);
@@ -212,6 +202,28 @@ namespace ProyectoZambranito.Vista
             this.gbAgregar.TabStop = false;
             this.gbAgregar.Text = "Agregar Usuario";
             // 
+            // cbxRol
+            // 
+            this.cbxRol.FormattingEnabled = true;
+            this.cbxRol.Items.AddRange(new object[] {
+            "user",
+            "admin"});
+            this.cbxRol.Location = new System.Drawing.Point(277, 260);
+            this.cbxRol.Name = "cbxRol";
+            this.cbxRol.Size = new System.Drawing.Size(121, 21);
+            this.cbxRol.TabIndex = 12;
+            // 
+            // tbEliminar
+            // 
+            this.tbEliminar.Controls.Add(this.gbEliminar);
+            this.tbEliminar.Location = new System.Drawing.Point(4, 22);
+            this.tbEliminar.Name = "tbEliminar";
+            this.tbEliminar.Padding = new System.Windows.Forms.Padding(3);
+            this.tbEliminar.Size = new System.Drawing.Size(452, 400);
+            this.tbEliminar.TabIndex = 1;
+            this.tbEliminar.Text = "Eliminar Usuario";
+            this.tbEliminar.UseVisualStyleBackColor = true;
+            // 
             // gbEliminar
             // 
             this.gbEliminar.Controls.Add(this.btnEliminarUsuario);
@@ -223,17 +235,6 @@ namespace ProyectoZambranito.Vista
             this.gbEliminar.TabIndex = 0;
             this.gbEliminar.TabStop = false;
             this.gbEliminar.Text = "Eliminar usuario";
-            // 
-            // cbxRol
-            // 
-            this.cbxRol.FormattingEnabled = true;
-            this.cbxRol.Items.AddRange(new object[] {
-            "user",
-            "admin"});
-            this.cbxRol.Location = new System.Drawing.Point(277, 260);
-            this.cbxRol.Name = "cbxRol";
-            this.cbxRol.Size = new System.Drawing.Size(121, 21);
-            this.cbxRol.TabIndex = 12;
             // 
             // button1
             // 
@@ -256,14 +257,15 @@ namespace ProyectoZambranito.Vista
             this.ClientSize = new System.Drawing.Size(636, 450);
             this.Controls.Add(this.tbcGestorUsuarios);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "btnRegresar";
-            this.Text = "frmGestionUsuarios";
+            this.Text = "Gestor de Usuarios";
             this.Load += new System.EventHandler(this.frmGestionUsuarios_Load);
             this.tbcGestorUsuarios.ResumeLayout(false);
             this.tbAgregar.ResumeLayout(false);
-            this.tbEliminar.ResumeLayout(false);
             this.gbAgregar.ResumeLayout(false);
             this.gbAgregar.PerformLayout();
+            this.tbEliminar.ResumeLayout(false);
             this.gbEliminar.ResumeLayout(false);
             this.gbEliminar.PerformLayout();
             this.ResumeLayout(false);

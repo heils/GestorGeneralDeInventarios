@@ -29,6 +29,7 @@ namespace ProyectoZambranito.Vista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInventario));
             this.dgvInventario = new System.Windows.Forms.DataGridView();
             this.dgvCRUD = new System.Windows.Forms.DataGridView();
             this.lblID = new System.Windows.Forms.Label();
@@ -246,8 +247,9 @@ namespace ProyectoZambranito.Vista
             this.Controls.Add(this.lblID);
             this.Controls.Add(this.dgvCRUD);
             this.Controls.Add(this.dgvInventario);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmInventario";
-            this.Text = "frmInventario";
+            this.Text = "Inventario";
             this.Load += new System.EventHandler(this.frmInventario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCRUD)).EndInit();

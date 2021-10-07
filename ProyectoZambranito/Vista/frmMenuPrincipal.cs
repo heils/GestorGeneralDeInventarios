@@ -75,7 +75,7 @@ namespace ProyectoZambranito.Vista
 
         private void btnInventario_Click(object sender, EventArgs e)
         {
-            Vista.frmInventario frminv = new Vista.frmInventario();
+            Vista.frmInven frminv = new Vista.frmInven();
            frminv.Show();
         }
     }

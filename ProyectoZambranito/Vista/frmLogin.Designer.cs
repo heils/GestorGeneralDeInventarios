@@ -170,11 +170,12 @@ namespace ProyectoZambranito.Vista
             this.ClientSize = new System.Drawing.Size(892, 567);
             this.Controls.Add(this.pnlLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmLogin";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "GDInv";
+            this.Text = "Login";
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.pnlLogin.ResumeLayout(false);
             this.pnlLogin.PerformLayout();
