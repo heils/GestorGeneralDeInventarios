@@ -16,7 +16,7 @@ namespace ProyectoZambranito
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Vista.frmInventario());
+            Application.Run(new Vista.frmLogin());
         }
     }
 }

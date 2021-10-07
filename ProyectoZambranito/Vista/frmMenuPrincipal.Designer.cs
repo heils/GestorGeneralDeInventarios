@@ -347,6 +347,7 @@ namespace ProyectoZambranito.Vista
             this.btnInventario.Size = new System.Drawing.Size(171, 137);
             this.btnInventario.TabIndex = 0;
             this.btnInventario.UseVisualStyleBackColor = false;
+            this.btnInventario.Click += new System.EventHandler(this.btnInventario_Click);
             // 
             // label12
             // 

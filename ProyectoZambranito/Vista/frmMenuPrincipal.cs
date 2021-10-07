@@ -72,5 +72,11 @@ namespace ProyectoZambranito.Vista
             Vista.frmProveedores frmProveedores = new Vista.frmProveedores();
             frmProveedores.Show();
         }
+
+        private void btnInventario_Click(object sender, EventArgs e)
+        {
+            Vista.frmInventario frminv = new Vista.frmInventario();
+           frminv.Show();
+        }
     }
 }
